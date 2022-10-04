@@ -1,2 +1,2 @@
 # dscov-github-workshop
-Demonstration directory for the DScoV GitHub Workshop
+Demonstration repository for the DScoV Lunch Workshop: Collaborative Coding for Science using Git, GitHub and Pull Requests
