@@ -40,9 +40,33 @@ Demonstration repository for the DScoV Lunch Workshop: Collaborative Coding for 
 ### Make a Branch based on "main" where you'll solve the issue
 There are several ways you can make a new branch.
 
-- On the Issue Page on GitHub (the easiest option) <img width="1110" alt="Screen Shot 2022-10-05 at 15 46 03" src="https://user-images.githubusercontent.com/2803227/194149229-899e9a1c-a97d-47f4-adbc-a12dbd47d670.png">
+#### On the Issue Page on GitHub (the easiest option) 
+Click "Create a branch" on the issue page.
+<img width="1110" alt="Screen Shot 2022-10-05 at 15 46 03" src="https://user-images.githubusercontent.com/2803227/194149229-899e9a1c-a97d-47f4-adbc-a12dbd47d670.png">
 
+A branch name will be suggested, and you can specify how you want to get access to the new branch. 
+<img width="1110" alt="Screen Shot 2022-10-05 at 15 49 52" src="https://user-images.githubusercontent.com/2803227/194149861-71146984-1872-4e38-9391-a8e77b401e8a.png">
 
+If you click "Open branch with GitHub Desktop", you should automatically be prompted to open the GitHub Desktop App. If you've not already downloaded the Repository, the Desktop app will handle that for you.
+
+If you click "Checkout locally" you'll be prompted to run some commands in your local copy of the repository.<img width="1110" alt="Screen Shot 2022-10-05 at 15 53 02" src="https://user-images.githubusercontent.com/2803227/194150561-819ec255-6b2b-4d01-b30b-264df4f3c1a5.png">
+
+#### Using GitHub Desktop (the second easiest option)
+
+Click on "Current Branch" and then "New Branch" <img width="1068" alt="Screen Shot 2022-10-05 at 15 57 53" src="https://user-images.githubusercontent.com/2803227/194151554-1dbc056b-bb92-4bf3-8104-73f4de8ac31a.png">
+
+If you currently have the main branch checked out, you'll be asked to name your new branch.
+<img width="1112" alt="Screen Shot 2022-10-05 at 16 02 01" src="https://user-images.githubusercontent.com/2803227/194152194-feb675e5-e41b-4604-89c2-ca060c28742c.png">
+
+Choose a descriptive name, like `34-feat-update-history-section-formatting` or `42-fix-broken-links-in-introduction`. 
+Use lower-case words, separated by dashes.
+
+If you currently have a different branch checked out, you'll be asked to name your branch *and* choose to "Create branch based on..."
+<img width="1112" alt="Screen Shot 2022-10-05 at 15 59 45" src="https://user-images.githubusercontent.com/2803227/194152020-b049819a-cc5a-475d-8571-16f088fd2b07.png">
+
+Here you should choose the "main" branch to base your new branch on.
+
+#### Using the Git command line (the most flexible option)
 
 ### Solve the issue
 Make a series of commits to solve the issue.
@@ -50,6 +74,7 @@ Make a series of commits to solve the issue.
 
 
 Once you're done, repeat from step 1).
+
 
 You can do this in one of three ways:
 
@@ -73,6 +98,7 @@ A part of the document is done if it is:
 
 ## Resources
 - [GitHub flavoured Markdown](https://github.github.com/gfm/) specifies precisely how to write Markdown text for GitHub
+
 
 ## Examples
 
