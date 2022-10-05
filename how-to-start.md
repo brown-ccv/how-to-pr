@@ -1,3 +1,5 @@
+[⇧ Overview](README.md) | [**⇨ Next: Issue**](how-to-issue.md)
+
 # Getting Started
 
 ## Prerequisites
@@ -10,4 +12,4 @@
 ## Clone the Repository
 ⛔️ TODO ⛔️ 
 
-[⇧ Overview](README.md) | [**⇨ Next: Issue**](how-to-issue.md)
+

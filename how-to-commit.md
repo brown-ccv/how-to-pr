@@ -1,3 +1,5 @@
+[⇦ Back to: Branch](how-to-branch.md) | [⇧ Overview](README.md) | [**⇨ Next: Pull Request**](how-to-pr.md)
+
 # Solve the issue, commit-by-commit
 Make a _series_ of "commits" to solve the issue (not just one big commit).
 
@@ -64,4 +66,3 @@ git commit -m "<your commit summary here>
 "
 ```
 
-[⇦ Back to: Branch](how-to-branch.md) | [⇧ Overview](README.md) | [**⇨ Next: Pull Request**](how-to-pr.md)

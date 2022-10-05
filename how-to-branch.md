@@ -1,3 +1,5 @@
+[⇦ Back to: Issue](how-to-issue.md) | [⇧ Overview](README.md) | [**⇨ Next: Commit**](how-to-commit.md)
+
 # Make a Branch based on "main" where you'll solve the issue
 
 - **What is a branch, anyway?** 
@@ -60,4 +62,3 @@ git switch -c 34-fix-formatting main
 ... where `main` is the name of the "start-point," that is the commit where your new branch will begin.
 
 
-[⇦ Back to: Issue](how-to-issue.md) | [⇧ Overview](README.md) | [**⇨ Next: Commit**](how-to-commit.md)
