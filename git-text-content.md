@@ -36,7 +36,6 @@ Git's design was inspired by BitKeeper and Monotone.[38][39] Git was originally 
 
 ## Characteristics
 
-Find sources: "Git" – news · newspapers · books · scholar · JSTOR (June 2020) (Learn how and when to remove this template message)
 Git's design is a synthesis of Torvalds's experience with Linux in maintaining a large distributed development project, along with his intimate knowledge of file-system performance gained from the same project and the urgent need to produce a working system in short order. These influences led to the following implementation choices:[42]
 
 Strong support for non-linear development
