@@ -55,6 +55,12 @@ There are several ways you can make a new branch.
 - In the GitHub Desktop App (the second easiest option)
 - Using the Git command line tool (the most flexible option)
 
+For all of the methods, you should follow these rules of branch naming:
+- `use-lower-case-with-dashes-separating-the-words`
+- Choose a descriptive name, like `34-feat-update-history-section-formatting` or `42-fix-broken-links-in-introduction` to help others navigate the branches. 
+ > ⚠️ Projects involving a few people might have tens of concurrent branches. Non-descriptive names like `test-branch1` or `final-update`, `final-update-2` make the task of remembering which branch is which overwhelming or impossible.
+
+
 #### On the GitHub issue page
 Click "Create a branch" on the issue page.
 <img width="1110" alt="Screen Shot 2022-10-05 at 15 46 03" src="https://user-images.githubusercontent.com/2803227/194149229-899e9a1c-a97d-47f4-adbc-a12dbd47d670.png">
@@ -74,9 +80,6 @@ Click on "Current Branch" and then "New Branch" <img width="1068" alt="Screen Sh
 
 If you currently have the main branch checked out, you'll be asked to name your new branch.
 <img width="1112" alt="Screen Shot 2022-10-05 at 16 02 01" src="https://user-images.githubusercontent.com/2803227/194152194-feb675e5-e41b-4604-89c2-ca060c28742c.png">
-
-Choose a descriptive name, like `34-feat-update-history-section-formatting` or `42-fix-broken-links-in-introduction`. 
-Use lower-case words, separated by dashes.
 
 If you currently have a different branch checked out, you'll be asked to name your branch *and* choose to "Create branch based on..."
 <img width="1112" alt="Screen Shot 2022-10-05 at 15 59 45" src="https://user-images.githubusercontent.com/2803227/194152020-b049819a-cc5a-475d-8571-16f088fd2b07.png">
@@ -98,12 +101,15 @@ git switch -c 34-fix-formatting main
 ... where `main` is the name of the "start-point," that is the commit where your new branch will begin.
 
 ### Solve the issue
-Make a series of commits to solve the issue.
-- Making small changes to the text, formatting 
+Make a _series_ of commits to solve the issue (not just one big commit).
 
+> 📐 No PR is too small.
 
-Once you're done, repeat from step 1).
+- Make a small change, making an improvement, then commit it.
+- Repeat until you've made the **minimum number of commits** which make sense for someone else to review and merge into the repository.
+- If you think your issue is too big to fix in one go, and you can see a way to break it down into several independent chunks, do that.
 
+### Make a Pull Request (PR)
 
 You can do this in one of three ways:
 
@@ -122,7 +128,7 @@ A part of the document is done if it is:
 
 - improve the formatting
 
-## Tools
+## Tools and Resources
 
 
 ## Resources
