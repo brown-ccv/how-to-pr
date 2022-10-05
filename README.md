@@ -37,10 +37,25 @@ Demonstration repository for the DScoV Lunch Workshop: Collaborative Coding for 
 - Pick one you like. 
 - Assign yourself to the PR. <img width="1110" alt="Screen Shot 2022-10-05 at 15 35 27" src="https://user-images.githubusercontent.com/2803227/194147465-3e1cf130-4695-42c0-a758-8caf21124010.png">
 
-### Make a Branch based on "main" where you'll solve the issue
-There are several ways you can make a new branch.
 
-#### On the Issue Page on GitHub (the easiest option) 
+
+### Make a Branch based on "main" where you'll solve the issue
+
+- **What is a branch, anyway?** 
+  > 💡 A branch is a movable label attached to a particular commit. If you have a branch "checked-out", then when you make a new commit "on the branch", the branch is updated to point to the new commit. You'll make a series of commits, and then merge the final commit in that series (which *is* the "branch") back into "main". 
+- **What is the main branch?**
+  > 💡  The default branch is called "main". The current most up-to-date version of the code, excluding any not-yet-merged pull requests, is the commit which the main branch points to.
+- **Some of the documentation says that "master" is the default branch. Why the difference?**
+  > 💡  The default was formerly called "master," a term which has been replaced to its association with slavery. Some Git documentation still uses the old term.
+
+[More info on branches in the Git Book.](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+
+There are several ways you can make a new branch.
+- On the GitHub issue page (the easiest option) 
+- In the GitHub Desktop App (the second easiest option)
+- Using the Git command line tool (the most flexible option)
+
+#### On the GitHub issue page
 Click "Create a branch" on the issue page.
 <img width="1110" alt="Screen Shot 2022-10-05 at 15 46 03" src="https://user-images.githubusercontent.com/2803227/194149229-899e9a1c-a97d-47f4-adbc-a12dbd47d670.png">
 
@@ -51,7 +66,9 @@ If you click "Open branch with GitHub Desktop", you should automatically be prom
 
 If you click "Checkout locally" you'll be prompted to run some commands in your local copy of the repository.<img width="1110" alt="Screen Shot 2022-10-05 at 15 53 02" src="https://user-images.githubusercontent.com/2803227/194150561-819ec255-6b2b-4d01-b30b-264df4f3c1a5.png">
 
-#### Using GitHub Desktop (the second easiest option)
+The new branch will be created and you can start to make changes in your text editor.
+
+#### Using GitHub Desktop
 
 Click on "Current Branch" and then "New Branch" <img width="1068" alt="Screen Shot 2022-10-05 at 15 57 53" src="https://user-images.githubusercontent.com/2803227/194151554-1dbc056b-bb92-4bf3-8104-73f4de8ac31a.png">
 
@@ -66,7 +83,19 @@ If you currently have a different branch checked out, you'll be asked to name yo
 
 Here you should choose the "main" branch to base your new branch on.
 
-#### Using the Git command line (the most flexible option)
+The new branch will be created and you can start to make changes.
+
+#### Using the Git command line
+
+If you are already on the branch where your changes need to be included – in our example always the "main" branch, then you can run this command to switch to a new branch you **c**reate
+```shell
+git switch -c 34-fix-formatting
+```
+If you have a different branch currently checked out, then you can do the following:
+```shell
+git switch -c 34-fix-formatting main
+```
+... where `main` is the name of the "start-point," that is the commit where your new branch will begin.
 
 ### Solve the issue
 Make a series of commits to solve the issue.
