@@ -2,25 +2,25 @@
 
 # Make a Branch based on "main" where you'll solve the issue
 
-- **What is a branch, anyway?** 
-  > 💡 A branch is a movable label attached to a particular commit. If you have a branch "checked-out", then when you make a new commit "on the branch", the branch is updated to point to the new commit. You'll make a series of commits, and then merge the final commit in that series (which *is* the "branch") back into "main". 
-- **What is the main branch?**
-  > 💡  The default branch is called "main". The current most up-to-date version of the code, excluding any not-yet-merged pull requests, is the commit which the main branch points to.
-- **Some of the documentation says that "master" is the default branch. Why the difference?**
-  > 💡  The default was formerly called "master," a term which has been replaced to its association with slavery. Some Git documentation still uses the old term.
-
-[More info on branches in the Git Book.](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+> ## Definitions
+> 💡 A **branch** is a movable label attached to a particular commit. If you have a branch "checked-out", then when you make a new commit "on the branch", the branch is updated to point to the new commit. You'll make a series of commits, and then merge the final commit in that series (which *is* the "branch") back into "main". 
+> 
+> 💡 The **default branch** is called **main**. The current most up-to-date version of the code, excluding any not-yet-merged pull requests, is the commit which the main branch points to.
+> 
+> 👵 *The default branch was formerly called "master," a term which has been replaced due to its association with slavery. Some Git documentation still uses the old term.*
+> 
+> [More info on branches in the Git Book.](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 There are several ways you can make a new branch.
 - On the GitHub issue page (the easiest option) 
 - In the GitHub Desktop App (the second easiest option)
 - Using the Git command line tool (the most flexible option)
 
-For all of the methods, you should follow these rules of branch naming:
+For all of the methods, you should follow these rules of branch and repository naming:
 - `use-lower-case-with-dashes-separating-the-words`
 - Choose a descriptive name, like `34-feat-update-history-section-formatting` or `42-fix-broken-links-in-introduction` to help others navigate the branches. 
+ 
  > ⚠️ Projects involving a few people might have tens of concurrent branches. Non-descriptive names like `test-branch1` or `final-update`, `final-update-2` make the task of remembering which branch is which overwhelming or impossible.
-
 
 ## On the GitHub issue page
 Click "Create a branch" on the issue page.
