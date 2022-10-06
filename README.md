@@ -1,9 +1,9 @@
 # dscov-github-workshop
 Demonstration repository for the DScoV Lunch Workshop: Collaborative Coding for Science using Git, GitHub and Pull Requests
 
-## Aim for the Workshop
-
-> 🎯 We're going to collectively format a copy of the [Wikipedia page about Git](https://en.wikipedia.org/wiki/Git) using "[Markdown](https://daringfireball.net/projects/markdown/)," one of the text formats which GitHub uses for README files, comments on code, etc. 
+> ## 🎯 Aim for the Workshop
+> 
+> We're going to collectively format a copy of the [Wikipedia page about Git](https://en.wikipedia.org/wiki/Git) using "[Markdown](https://daringfireball.net/projects/markdown/)," one of the text formats which GitHub uses for README files, comments on code, etc. 
 
 ## Approach 
 
