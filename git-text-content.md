@@ -186,7 +186,7 @@ On 17 December 2014, an exploit was found affecting the Windows and macOS versio
 
 Git version 2.6.1, released on 29 September 2015, contained a patch for a security vulnerability (CVE-2015–7545)[117] that allowed arbitrary code execution.[118] The vulnerability was exploitable if an attacker could convince a victim to clone a specific URL, as the arbitrary commands were embedded in the URL itself.[119] An attacker could use the exploit via a man-in-the-middle attack if the connection was unencrypted,[119] as they could redirect the user to a URL of their choice. Recursive clones were also vulnerable since they allowed the controller of a repository to specify arbitrary URLs via the gitmodules file.[119]
 
-Git uses SHA-1 hashes internally. Linus Torvalds has responded that the hash was mostly to guard against accidental corruption, and the security a cryptographically secure hash gives was just an accidental side effect, with the main security being signing elsewhere.[120][121] Since a demonstration of the SHAttered attack against git in 2017, git was modified to use a SHA-1 variant resistant to this attack. A plan for hash function transition is being written since February 2020.[122]
+Git uses SHA-1 hashes internally. Linus Torvalds has responded that the hash was mostly to guard against accidental corruption, and the security a cryptographically secure hash gives was just an accidental side effect, with the main security being signing elsewhere.[120][^121] Since a demonstration of the SHAttered attack against git in 2017, git was modified to use a SHA-1 variant resistant to this attack. A plan for hash function transition is being written since February 2020.[^122]
 
 Trademark[edit]
 "Git" is a registered word trademark of Software Freedom Conservancy under US500000085961336 since 2015-02-03.
@@ -316,8 +316,8 @@ References[edit]
 ^ "Git 2.6.1". GitHub. 29 September 2015. Archived from the original on 11 April 2016. Retrieved 26 December 2015.
 ^ Jump up to: a b c Blake Burkhart; et al. (5 October 2015). "Re: CVE Request: git". Archived from the original on 27 December 2015. Retrieved 26 December 2015.
 ^ "hash – How safe are signed git tags? Only as safe as SHA-1 or somehow safer?". Information Security Stack Exchange. 22 September 2014. Archived from the original on 24 June 2016.
-^ "Why does Git use a cryptographic hash function?". Stack Overflow. 1 March 2015. Archived from the original on 1 July 2016.
-^ "Git – hash-function-transition Documentation". git-scm.com.
+- [^121] "Why does Git use a cryptographic hash function?". Stack Overflow. 1 March 2015. Archived from the original on 1 July 2016.
+- [^122] "Git – hash-function-transition Documentation". git-scm.com.
 
 External links[edit]
 
