@@ -1,18 +1,35 @@
-[⇦ Back to: Commit](how-to-commit.md) | [⇧ Overview](README.md) | [**⇨ Next: PR Update**](how-to-pr-update.md)
+[⇦ Back to: Commit](how-to-commit.md) | [⇧ Overview](README.md) | [**⇨ Next: Review Pull Request**](how-to-pr-review.md)
 
 # Make a Pull Request (PR)
 
 > ⛔️TODO⛔️ include link to Notion "How to PR" detailed content for the interested. Finish that up and publish it before Friday.
 
-You can do this in one of three ways:
+The process of making a PR is:
+- Push your commit(s) to a GitHub repository.
+- Create a new pull request for that branch on the  [GitHub Pull Requests page](https://github.com/brown-ccv/dscov-github-workshop/pulls).
 
-- You'll start a draft PR, with 
+## Push the branch
 
-  - a high-level description and 
-  - a link to the issue you're fixing. 
-- Once you think you're done, please mark the PR as "ready for review" and request two or three reviewers.
+### Using GitHub Desktop
+
+### Using `git` on the command line
+
 
 ## Make a Draft Pull Request
+
+- Open the [GitHub Pull Requests page for the shared repository](https://github.com/brown-ccv/dscov-github-workshop/pulls).
+- Click on "New pull request"
+- Choose the branches to compare:
+    - Select base: main (this should be the default)
+    - Select compare: your-new-branch
+- Add the title and description:
+  - a high-level description and 
+  - a reference to the issue you're fixing. 
+    - The issue has a number which looks like "#12". You can find it on the issue page.
+    You should add to the pull request description something which looks like:
+    ```gfm
+    fixes: #12
+    ```
 
 On the "create pull request" button, there is an arrow. Click this, and select "Draft pull request."
 ⛔️TODO⛔️ Image of Draft PR
@@ -34,4 +51,3 @@ If you realise that the code needs updating more, then re-mark the PR as a draft
 
 ## Wait for feedback
 Wait until you have the amount of feedback you need.
-
