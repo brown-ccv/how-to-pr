@@ -32,7 +32,7 @@ Stupid. Contemptible and despicable. Simple. Take your pick from the dictionary 
 The source code for Git refers to the program as, "the information manager from hell."
 
 Design
-Git's design was inspired by BitKeeper and Monotone.[38][39] Git was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as Cogito or StGIT.[39] The core Git project has since become a complete version-control system that is usable directly.[40] While strongly influenced by BitKeeper, Torvalds deliberately avoided conventional approaches, leading to a unique design.[41]
+Git's design was inspired by BitKeeper and Monotone.[^38][^39] Git was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as Cogito or StGIT.[^39] The core Git project has since become a complete version-control system that is usable directly.[40] While strongly influenced by BitKeeper, Torvalds deliberately avoided conventional approaches, leading to a unique design.[41]
 
 ## Characteristics
 
