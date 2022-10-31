@@ -7,7 +7,7 @@ Demonstration repository for the workshop **Collaborative Coding for Science usi
 
 ## Approach 
 
-- [**⇨ Start Here 🔗**](how-to-start.md) We'll start from an incorrectly formatted version of the [Wikipedia page about Git](https://en.wikipedia.org/wiki/Git). The original is here: https://github.com/brown-ccv/dscov-github-workshop/blob/main/git-text-content.md. 
+- [**⇨ Start Here 🔗**](how-to-start.md) We'll start from an incorrectly formatted version of the [Wikipedia page about Git](https://en.wikipedia.org/wiki/Git). The original is here: https://github.com/autoresearch/how-to-pr/blob/main/git-text-content.md. 
 - [**Issue 🔗**](how-to-issue.md): You'll choose an issue. 
 - [**Branch 🔗**](how-to-branch.md):  You'll make a "branch" which can be shared, where they can make changes. 
 - [**Commit 🔗**](how-to-commit.md):  You'll make a series of "commits" where they actually fix the issue, bit-by-bit.
