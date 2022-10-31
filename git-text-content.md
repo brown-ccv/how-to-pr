@@ -303,6 +303,7 @@ References[edit]
 ^ "VSS/SourceSafe Jobs, Average Salary for Microsoft Visual SourceSafe (VSS) Skills". Itjobswatch.co.uk. Archived from the original on 29 October 2016. Retrieved 30 September 2016.
 [^38]: "Windows switch to Git almost complete: 8,500 commits and 1,760 builds each day". Ars Technica. 24 May 2017. Archived from the original on 24 May 2017. Retrieved 24 May 2017.
 [^39]: "git-init". Git. Archived from the original on 15 March 2022.
+
 ^ "Git – Branches in a Nutshell". git-scm.com. Archived from the original on 20 December 2020. Retrieved 15 June 2020. The "master" branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one is that the git init command creates it by default and most people don’t bother to change it.
 ^ github/renaming, GitHub, 4 December 2020, retrieved 4 December 2020
 ^ Default branch name for new repositories now main, GitLab, 22 June 2021, retrieved 22 June 2021
