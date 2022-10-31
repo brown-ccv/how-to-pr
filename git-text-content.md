@@ -2,7 +2,7 @@
 
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Git)
 
-Git (/ɡɪt/)[8] is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).[9][10][11]
+Git (/ɡɪt/)[^8] is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).[9][10][11]
 
 Git was originally authored by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.[12] Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.[13] Git is free and open-source software distributed under the GPL-2.0-only license.
 
@@ -32,30 +32,48 @@ Stupid. Contemptible and despicable. Simple. Take your pick from the dictionary 
 The source code for Git refers to the program as, "the information manager from hell."
 
 # Design
-Git's design was inspired by BitKeeper and Monotone.[38][39] Git was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as Cogito or StGIT.[39] The core Git project has since become a complete version-control system that is usable directly.[40] While strongly influenced by BitKeeper, Torvalds deliberately avoided conventional approaches, leading to a unique design.[41]
+Git's design was inspired by BitKeeper and Monotone.[^38][^39] Git was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as Cogito or StGIT.[^39] The core Git project has since become a complete version-control system that is usable directly.[40] While strongly influenced by BitKeeper, Torvalds deliberately avoided conventional approaches, leading to a unique design.[41]
 
 ## Characteristics
 
 Git's design is a synthesis of Torvalds's experience with Linux in maintaining a large distributed development project, along with his intimate knowledge of file-system performance gained from the same project and the urgent need to produce a working system in short order. These influences led to the following implementation choices:[42]
 
 Strong support for non-linear development
+
 Git supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history. In Git, a core assumption is that a change will be merged more often than it is written, as it is passed around to various reviewers. In Git, branches are very lightweight: a branch is only a reference to one commit. With its parental commits, the full branch structure can be constructed.[improper synthesis?]
+
 Distributed development
+
 Like Darcs, BitKeeper, Mercurial, Bazaar, and Monotone, Git gives each developer a local copy of the full development history, and changes are copied from one such repository to another. These changes are imported as added development branches and can be merged in the same way as a locally developed branch.[43]
+
 Compatibility with existing systems and protocols
+
 Repositories can be published via Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), or a Git protocol over either a plain socket or Secure Shell (ssh). Git also has a CVS server emulation, which enables the use of existing CVS clients and IDE plugins to access Git repositories. Subversion repositories can be used directly with git-svn.[44]
+
 Efficient handling of large projects
+
 Torvalds has described Git as being very fast and scalable,[45] and performance tests done by Mozilla[46] showed that it was an order of magnitude faster diffing large repositories than Mercurial and GNU Bazaar; fetching version history from a locally stored repository can be one hundred times faster than fetching it from the remote server.[47]
+
 Cryptographic authentication of history
+
 The Git history is stored in such a way that the ID of a particular version (a commit in Git terms) depends upon the complete development history leading up to that commit. Once it is published, it is not possible to change the old versions without it being noticed. The structure is similar to a Merkle tree, but with added data at the nodes and leaves.[48] (Mercurial and Monotone also have this property.)
+
 Toolkit-based design
+
 Git was designed as a set of programs written in C and several shell scripts that provide wrappers around those programs.[49] Although most of those scripts have since been rewritten in C for speed and portability, the design remains, and it is easy to chain the components together.[50]
+
 Pluggable merge strategies
+
 As part of its toolkit design, Git has a well-defined model of an incomplete merge, and it has multiple algorithms for completing it, culminating in telling the user that it is unable to complete the merge automatically and that manual editing is needed.[51]
+
 Garbage accumulates until collected
+
 Aborting operations or backing out changes will leave useless dangling objects in the database. These are generally a small fraction of the continuously growing history of wanted objects. Git will automatically perform garbage collection when enough loose objects have been created in the repository. Garbage collection can be called explicitly using git gc.[52]
+
 Periodic explicit object packing
+
 Git stores each newly created object as a separate file. Although individually compressed, this takes up a great deal of space and is inefficient. This is solved by the use of packs that store a large number of objects delta-compressed among themselves in one file (or network byte stream) called a packfile. Packs are compressed using the heuristic that files with the same name are probably similar, without depending on this for correctness. A corresponding index file is created for each packfile, telling the offset of each object in the packfile. Newly created objects (with newly added history) are still stored as single objects, and periodic repacking is needed to maintain space efficiency. The process of packing the repository can be very computationally costly. By allowing objects to exist in the repository in a loose but quickly generated format, Git allows the costly pack operation to be deferred until later, when time matters less, e.g., the end of a workday. Git does periodic repacking automatically, but manual repacking is also possible with the git gc command. For data integrity, both the packfile and its index have an SHA-1 checksum inside, and the file name of the packfile also contains an SHA-1 checksum. To check the integrity of a repository, run the git fsck command.[53]
+
 Another property of Git is that it snapshots directory trees of files. The earliest systems for tracking versions of source code, Source Code Control System (SCCS) and Revision Control System (RCS), worked on individual files and emphasized the space savings to be gained from interleaved deltas (SCCS) or delta encoding (RCS) the (mostly similar) versions. Later revision-control systems maintained this notion of a file having an identity across multiple revisions of a project. However, Torvalds rejected this concept.[54] Consequently, Git does not explicitly record file revision relationships at any level below the source-code tree.
 
 These implicit revision relationships have some significant consequences:
@@ -196,14 +214,15 @@ Git uses SHA-1 hashes internally. Linus Torvalds has responded that the hash was
 ^ Jump up to: a b c d e f g h i j k l m n o p q r s Not listed as an option in this survey
 
 # References[edit]
-^ "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
-^ "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
-^ "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
-^ "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
-^ "Git Source Code Mirror". GitHub. Archived from the original on 3 June 2022. Retrieved 9 June 2022.
-^ "Git's LGPL license at github.com". GitHub. 20 May 2011. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
-^ "Git's GPL license at github.com". GitHub. 18 January 2010. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
-^ "Tech Talk: Linus Torvalds on git (at 00:01:30)". Archived from the original on 20 December 2015. Retrieved 20 July 2014 – via YouTube.
+- [^1]: "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
+- [^2]:  "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
+- [^3]:  "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
+- [^4]:  "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
+- [^5]:  "Git Source Code Mirror". GitHub. Archived from the original on 3 June 2022. Retrieved 9 June 2022.
+- [^6]:  "Git's LGPL license at github.com". GitHub. 20 May 2011. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
+- [^7]:  "Git's GPL license at github.com". GitHub. 18 January 2010. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
+- [^8]: "Tech Talk: Linus Torvalds on git (at 00:01:30)". Archived from the original on 20 December 2015. Retrieved 20 July 2014 – via YouTube.
+
 ^ Jump up to: a b Torvalds, Linus (7 April 2005). "Re: Kernel SCM saga." linux-kernel (Mailing list). Archived from the original on 1 July 2019. Retrieved 3 February 2017. "So I'm writing some scripts to try to track things a whole lot faster."
 ^ Jump up to: a b Torvalds, Linus (10 June 2007). "Re: fatal: serious inflate inconsistency". git (Mailing list).
 ^ Jump up to: a b c d Linus Torvalds (3 May 2007). Google tech talk: Linus Torvalds on git. Event occurs at 02:30. Archived from the original on 28 May 2007. Retrieved 16 May 2007.
@@ -301,8 +320,9 @@ Git uses SHA-1 hashes internally. Linus Torvalds has responded that the hash was
 ^ "Subversion Jobs, Average Salary for Apache Subversion (SVN) Skills". Itjobswatch.co.uk. Archived from the original on 25 October 2016. Retrieved 30 September 2016.
 ^ "Mercurial Jobs, Average Salary for Mercurial Skills". Itjobswatch.co.uk. Archived from the original on 23 September 2016. Retrieved 30 September 2016.
 ^ "VSS/SourceSafe Jobs, Average Salary for Microsoft Visual SourceSafe (VSS) Skills". Itjobswatch.co.uk. Archived from the original on 29 October 2016. Retrieved 30 September 2016.
-^ "Windows switch to Git almost complete: 8,500 commits and 1,760 builds each day". Ars Technica. 24 May 2017. Archived from the original on 24 May 2017. Retrieved 24 May 2017.
-^ "git-init". Git. Archived from the original on 15 March 2022.
+[^38]: "Windows switch to Git almost complete: 8,500 commits and 1,760 builds each day". Ars Technica. 24 May 2017. Archived from the original on 24 May 2017. Retrieved 24 May 2017.
+[^39]: "git-init". Git. Archived from the original on 15 March 2022.
+
 ^ "Git – Branches in a Nutshell". git-scm.com. Archived from the original on 20 December 2020. Retrieved 15 June 2020. The "master" branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one is that the git init command creates it by default and most people don’t bother to change it.
 ^ github/renaming, GitHub, 4 December 2020, retrieved 4 December 2020
 ^ Default branch name for new repositories now main, GitLab, 22 June 2021, retrieved 22 June 2021
