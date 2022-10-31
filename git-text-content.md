@@ -2,7 +2,7 @@
 
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Git)
 
-Git (/ɡɪt/)[8] is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).[9][10][11]
+Git (/ɡɪt/)[^8] is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).[9][10][11]
 
 Git was originally authored by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.[12] Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.[13] Git is free and open-source software distributed under the GPL-2.0-only license.
 
@@ -196,14 +196,14 @@ Notes[edit]
 ^ Jump up to: a b c d e f g h i j k l m n o p q r s Not listed as an option in this survey
 
 References[edit]
-^ "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
-^ "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
-^ "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
-^ "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
-^ "Git Source Code Mirror". GitHub. Archived from the original on 3 June 2022. Retrieved 9 June 2022.
-^ "Git's LGPL license at github.com". GitHub. 20 May 2011. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
-^ "Git's GPL license at github.com". GitHub. 18 January 2010. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
-^ "Tech Talk: Linus Torvalds on git (at 00:01:30)". Archived from the original on 20 December 2015. Retrieved 20 July 2014 – via YouTube.
+- [^1]: "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
+- [^2]:  "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
+- [^3]:  "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
+- [^4]:  "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
+- [^5]:  "Git Source Code Mirror". GitHub. Archived from the original on 3 June 2022. Retrieved 9 June 2022.
+- [^6]:  "Git's LGPL license at github.com". GitHub. 20 May 2011. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
+- [^7]:  "Git's GPL license at github.com". GitHub. 18 January 2010. Archived from the original on 11 April 2016. Retrieved 12 October 2014.
+- [^8]: "Tech Talk: Linus Torvalds on git (at 00:01:30)". Archived from the original on 20 December 2015. Retrieved 20 July 2014 – via YouTube.
 ^ Jump up to: a b Torvalds, Linus (7 April 2005). "Re: Kernel SCM saga." linux-kernel (Mailing list). Archived from the original on 1 July 2019. Retrieved 3 February 2017. "So I'm writing some scripts to try to track things a whole lot faster."
 ^ Jump up to: a b Torvalds, Linus (10 June 2007). "Re: fatal: serious inflate inconsistency". git (Mailing list).
 ^ Jump up to: a b c d Linus Torvalds (3 May 2007). Google tech talk: Linus Torvalds on git. Event occurs at 02:30. Archived from the original on 28 May 2007. Retrieved 16 May 2007.
