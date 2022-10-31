@@ -1,4 +1,4 @@
-# dscov-github-workshop
+# How to PR
 Demonstration repository for the workshop **Collaborative Coding for Science using Git, GitHub and Pull Requests**
 
 > ## 🎯 Aim for the Workshop
