@@ -70,7 +70,7 @@ When there are more than one common ancestors that can be used for a three-way m
 
 — Linus Torvalds[61]
 octopus: This is the default when merging more than two heads.
-Data structures[edit]
+## Data structures[edit]
 Git's primitives are not inherently a source-code management system. Torvalds explains:[62]
 
 In many ways you can just see git as a filesystem—it's content-addressable, and it has a notion of versioning, but I really designed it coming at the problem from the viewpoint of a filesystem person (hey, kernels is what I do), and I actually have absolutely zero interest in creating a traditional SCM system.
@@ -98,7 +98,7 @@ Additionally, git stores labels called refs (short for references) to indicate t
 Heads (branches): Named references that are advanced automatically to the new commit when a commit is made on top of them.
 HEAD: A reserved head that will be compared against the working tree to create a commit.
 Tags: Like branch references but fixed to a particular commit. Used to label important points in history.
-References[edit]
+## References[edit]
 Every object in the Git database that is not referred to may be cleaned up by using a garbage collection command or automatically. An object may be referenced by another object or an explicit reference. Git knows different types of references. The commands to create, move, and delete references vary. "git show-ref" lists all references. Some types are:
 
 heads: refers to an object locally,
@@ -128,7 +128,7 @@ JS-Git is a JavaScript implementation of a subset of Git.[80]
 Screenshot of Gitweb interface showing a commit diff
 As Git is a distributed version-control system, it could be used as a server out of the box. It's shipped with a built-in command git daemon which starts a simple TCP server running on the GIT protocol.[81] Dedicated Git HTTP servers help (amongst other features) by adding access control, displaying the contents of a Git repository via the web interfaces, and managing multiple repositories. Already existing Git repositories can be cloned and shared to be used by others as a centralized repo. It can also be accessed via remote shell just by having the Git software installed and allowing a user to log in.[82] Git servers typically listen on TCP port 9418.[83]
 
-Open source[edit]
+## Open source[edit]
 Hosting the Git server using the Git Binary.[84]
 Gerrit, a Git server configurable to support code reviews and providing access via ssh, an integrated Apache MINA or OpenSSH, or an integrated Jetty web server. Gerrit provides integration for LDAP, Active Directory, OpenID, OAuth, Kerberos/GSSAPI, X509 https client certificates. With Gerrit 3.0 all configurations will be stored as Git repositories, no database is required to run. Gerrit has a pull-request feature implemented in its core but lacks a GUI for it.
 Phabricator, a spin-off from Facebook. As Facebook primarily uses Mercurial, the Git support is not as prominent.[85]
@@ -136,7 +136,7 @@ RhodeCode Community Edition (CE), supporting Git, Mercurial and Subversion with 
 Kallithea, supporting both Git and Mercurial, developed in Python with GPL license.
 External projects like gitolite,[86] which provide scripts on top of Git software to provide fine-grained access control.
 There are several other FLOSS solutions for self-hosting, including Gogs[87] and Gitea, a fork of Gogs, both developed in Go language with MIT license.
-Git server as a service[edit]
+## Git server as a service[edit]
 See also: Comparison of source-code-hosting facilities
 There are many offerings of Git repositories as a service. The most popular are GitHub, SourceForge, Bitbucket and GitLab.[88][89][90][91][92]
 
@@ -162,7 +162,7 @@ Other	5.8%	3.0%	[ii]	[ii]
 None	9.3%	4.8%	4.8%	4.3%
 The UK IT jobs website itjobswatch.co.uk reports that as of late September 2016, 29.27% of UK permanent software development job openings have cited Git,[101] ahead of 12.17% for Microsoft Team Foundation Server,[102] 10.60% for Subversion,[103] 1.30% for Mercurial,[104] and 0.48% for Visual SourceSafe.[105]
 
-Extensions[edit]
+## Extensions[edit]
 There are many Git extensions, like Git LFS, which started as an extension to Git in the GitHub community and is now widely used by other repositories. Extensions are usually independently developed and maintained by different people, but at some point in the future, a widely used extension can be merged with Git.
 
 Other open-source Git extensions include:
