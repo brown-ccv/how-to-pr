@@ -1,4 +1,4 @@
-# dscov-github-workshop
+# how-to-pr
 Demonstration repository for the CCV Bootcamp Workshop 2023: Coding + Collaboration using Git, GitHub and Pull Requests
 
 > ## 🎯 Aim for the Workshop
