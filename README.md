@@ -1,6 +1,9 @@
 # how-to-pr
 Demonstration repository for the CCV Bootcamp Workshop 2023: Coding + Collaboration using Git, GitHub and Pull Requests
 
+The session has a Slack channel where you can post questions during the session and this week. 
+Find it here: https://ccv-share.slack.com/archives/C05BAL94KAQ or by searching for `bootcamp-git` on CCV-Share.
+
 > ## 🎯 Aim for the Workshop
 > 
 > We're going to collectively format a copy of the [Wikipedia page about Git](https://en.wikipedia.org/wiki/Git) using "[Markdown](https://daringfireball.net/projects/markdown/)," one of the text formats which GitHub uses for README files, comments on code, etc. 
