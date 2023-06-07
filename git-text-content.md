@@ -320,8 +320,7 @@ References[edit]
 
 External links[edit]
 
-Wikimedia Commons has media related to Git.
-
-Wikibooks has a book on the topic of: Git
-Official website Edit this at Wikidata
-Git at Open Hub
+* Wikimedia Commons has media related to Git.
+* Wikibooks has a book on the topic of: Git
+* Official website 
+* Edit this at Wikidata Git at Open Hub
