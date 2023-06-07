@@ -308,10 +308,9 @@ References[edit]
 ^ "Git Revert | Atlassian Git Tutorial". Atlassian. Reverting has two important advantages over resetting. First, it doesn’t change the project history, which makes it a "safe" operation for commits that have already been published to a shared repository.
 ^ "Gitflow Workflow | Atlassian Git Tutorial". Atlassian. Retrieved 15 June 2020.
 ^ "Forking Workflow | Atlassian Git Tutorial". Atlassian. Retrieved 15 June 2020.
-^ "Git repository access control". Archived from the original on 14 September 2016. Retrieved 6 September 2016.
-^ Pettersen, Tim (20 December 2014). "Securing your Git server against CVE-2014-9390". Archived from the original on 24 December 2014. Retrieved 22 December 2014.
-^ Hamano, J. C. (18 December 2014). "[Announce] Git v2.2.1 (and updates to older maintenance tracks)". Newsgroup: gmane.linux.kernel. Archived from the original on 19 December 2014. Retrieved 22 December 2014.
-^ "CVE-2015-7545". 15 December 2015. Archived from the original on 26 December 2015. Retrieved 26 December 2015.
+
+-  "CVE-2015-7545". 15 December 2015. Archived from the original on 26 December 2015. Retrieved 26 December 2015.
+
 ^ "Git 2.6.1". GitHub. 29 September 2015. Archived from the original on 11 April 2016. Retrieved 26 December 2015.
 ^ Jump up to: a b c Blake Burkhart; et al. (5 October 2015). "Re: CVE Request: git". Archived from the original on 27 December 2015. Retrieved 26 December 2015.
 
