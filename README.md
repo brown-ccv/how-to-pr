@@ -1,5 +1,8 @@
-# dscov-github-workshop
-Demonstration repository for the DScoV Lunch Workshop: Collaborative Coding for Science using Git, GitHub and Pull Requests
+# how-to-pr
+Demonstration repository for the CCV Bootcamp Workshop 2023: Coding + Collaboration using Git, GitHub and Pull Requests
+
+The session has a Slack channel where you can post questions during the session and this week. 
+Find it here: https://ccv-share.slack.com/archives/C05BAL94KAQ or by searching for `bootcamp-git` on CCV-Share.
 
 > ## 🎯 Aim for the Workshop
 > 
@@ -7,18 +10,7 @@ Demonstration repository for the DScoV Lunch Workshop: Collaborative Coding for 
 
 ## Approach 
 
-- [**⇨ Start Here 🔗**](how-to-start.md) We'll start from an incorrectly formatted version of the [Wikipedia page about Git](https://en.wikipedia.org/wiki/Git). The original is here: https://github.com/brown-ccv/dscov-github-workshop/blob/main/git-text-content.md. 
-- [**Issue 🔗**](how-to-issue.md): You'll choose an issue. 
-- [**Branch 🔗**](how-to-branch.md):  You'll make a "branch" which can be shared, where they can make changes. 
-- [**Commit 🔗**](how-to-commit.md):  You'll make a series of "commits" where they actually fix the issue, bit-by-bit.
-- [**Push  🔗**](how-to-push.md): You'll "push" your branch to GitHub.
-- **Pull Request**
-  - [**Create 🔗**](how-to-pr.md): You'll make a "pull request" (PR) which says "please incorporate the changes in *my* branch in *your* branch. 
-  - [**Review 🔗**](how-to-pr-review.md): Reviewers (your peers) will have the chance to look at the PR and suggest changes and improvements, or to say "this is great, let's merge it!"
-  - [**Merge 🔗**](how-to-pr-merge.md): The author of the PR will merge the approved PR.
-  - [**Update 🔗**](how-to-pr-update.md): Everyone will update their now-outdated-PRs to incorporate the new merged changes, before they too are merged. 
-  - [**Merge Conflicts 🔗**](how-to-merge-conflict.md): If people work on the same part of the document, then the authors will resolve the conflicting changes. 
-
+The steps for the workshop are listed on [the workshop's web page](https://www.notion.so/brownccv/Coding-Collaboration-using-Git-GitHub-and-Pull-Requests-afdc0e8c48a449f2864f0e3e8b5b4a59?pvs=4#f7f80c9a26074540b1fa4adc575dc50d)
 
 ## Resources
 - [GitHub flavoured Markdown 🔗](https://github.github.com/gfm/) specifies precisely how to write Markdown text for GitHub
