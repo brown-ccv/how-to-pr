@@ -1,4 +1,4 @@
-# how-to-pr
+# Coding + Collaboration using Git, GitHub and Pull Requests
 Demonstration repository for the CCV Bootcamp Workshop 2023: Coding + Collaboration using Git, GitHub and Pull Requests
 
 The session has a Slack channel where you can post questions during the session and this week. 
