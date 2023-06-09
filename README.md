@@ -1,4 +1,4 @@
-# Coding + Collaboration using Git, GitHub and Pull Requests
+# Coding and Collaboration using Git, GitHub and Pull Requests
 Demonstration repository for the CCV Bootcamp Workshop 2023: Coding + Collaboration using Git, GitHub and Pull Requests
 
 ## 🎯 Aim for the Workshop
