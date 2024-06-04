@@ -20,7 +20,7 @@ The development of Git began on 3 April 2005.[17] Torvalds announced the project
 
 Torvalds turned over maintenance on 26 July 2005 to Junio Hamano, a major contributor to the project.[22] Hamano was responsible for the 1.0 release on 21 December 2005.[23]
 
-## Naming
+### Naming
 Torvalds sarcastically quipped about the name git (which means "unpleasant person" in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[24][25] The man page describes Git as "the stupid content tracker".[26] The read-me file of the source code elaborates further:[27]
 
 "git" can mean anything, depending on your mood.
