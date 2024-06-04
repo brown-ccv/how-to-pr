@@ -7,4 +7,4 @@ We're going to collectively format a copy of the [Wikipedia page about Git](http
 
 ## Resources
 
-🌍 The steps for the workshop are listed on [the workshop's web page](https://www.notion.so/brownccv/Coding-Collaboration-using-Git-GitHub-and-Pull-Requests-afdc0e8c48a449f2864f0e3e8b5b4a59?pvs=4#f7f80c9a26074540b1fa4adc575dc50d).
+🌍 The steps for the workshop are listed on [the workshop's web page](https://brownccv.notion.site/Collaboration-using-Git-GitHub-and-Pull-Requests-afdc0e8c48a449f2864f0e3e8b5b4a59).
