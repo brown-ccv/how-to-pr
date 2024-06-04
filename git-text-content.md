@@ -7,6 +7,7 @@ Git (/ɡɪt/)[8] is free and open source software for distributed version contro
 Git was originally authored by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.[12] Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.[13] Git is free and open-source software distributed under the GPL-2.0-only license.
 
 ## History
+
 Git development began in April 2005, after many developers of the Linux kernel gave up access to BitKeeper, a proprietary source-control management (SCM) system that they had been using to maintain the project since 2002.[14][15] The copyright holder of BitKeeper, Larry McVoy, had withdrawn free use of the product after claiming that Andrew Tridgell had created SourcePuller by reverse engineering the BitKeeper protocols.[16] The same incident also spurred the creation of another version-control system, Mercurial.
 
 Linus Torvalds wanted a distributed system that he could use like BitKeeper, but none of the available free systems met his needs. Torvalds cited an example of a source-control management system needing 30 seconds to apply a patch and update all associated metadata, and noted that this would not scale to the needs of Linux kernel development, where synchronizing with fellow maintainers could require 250 such actions at once. For his design criterion, he specified that patching should take no more than three seconds, and added three more goals:[9]
@@ -21,6 +22,7 @@ The development of Git began on 3 April 2005.[17] Torvalds announced the project
 Torvalds turned over maintenance on 26 July 2005 to Junio Hamano, a major contributor to the project.[22] Hamano was responsible for the 1.0 release on 21 December 2005.[23]
 
 ### Naming
+
 Torvalds sarcastically quipped about the name git (which means "unpleasant person" in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[24][25] The man page describes Git as "the stupid content tracker".[26] The read-me file of the source code elaborates further:[27]
 
 "git" can mean anything, depending on your mood.
@@ -28,7 +30,7 @@ Torvalds sarcastically quipped about the name git (which means "unpleasant perso
 Random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of "get" may or may not be relevant.
 Stupid. Contemptible and despicable. Simple. Take your pick from the dictionary of slang.
 "Global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
-"Goddamn idiotic truckload of sh*t": when it breaks.
+"Goddamn idiotic truckload of sh\*t": when it breaks.
 The source code for Git refers to the program as, "the information manager from hell."
 
 Design
@@ -75,7 +77,6 @@ Git's primitives are not inherently a source-code management system. Torvalds ex
 
 In many ways you can just see git as a filesystem—it's content-addressable, and it has a notion of versioning, but I really designed it coming at the problem from the viewpoint of a filesystem person (hey, kernels is what I do), and I actually have absolutely zero interest in creating a traditional SCM system.
 From this initial design approach, Git has developed the full set of features expected of a traditional SCM,[40] with features mostly being created as needed, then refined and extended over time.
-
 
 Some data flows and storage levels in the Git revision control system
 Git has two data structures: a mutable index (also called stage or cache) that caches information about the working directory and the next revision to be committed; and an immutable, append-only object database.
@@ -147,19 +148,19 @@ Stack Overflow has included version control in their annual developer survey[96]
 
 Version control systems used by responding developers:
 
-Name	2015	2017	2018	2022
-Git	69.3%	69.2%	87.2%	93.9%
-Subversion	36.9%	9.1%	16.1%	5.2%
-TFVC	12.2%	7.3%	10.9%	[ii]
-Mercurial	7.9%	1.9%	3.6%	1.1%
-CVS	4.2%	[ii]	[ii]	[ii]
-Perforce	3.3%	[ii]	[ii]	[ii]
-VSS	[ii]	0.6%	[ii]	[ii]
-ClearCase	[ii]	0.4%	[ii]	[ii]
-Zip file backups	[ii]	2.0%	7.9%	[ii]
-Raw network sharing	[ii]	1.7%	7.9%	[ii]
-Other	5.8%	3.0%	[ii]	[ii]
-None	9.3%	4.8%	4.8%	4.3%
+Name 2015 2017 2018 2022
+Git 69.3% 69.2% 87.2% 93.9%
+Subversion 36.9% 9.1% 16.1% 5.2%
+TFVC 12.2% 7.3% 10.9% [ii]
+Mercurial 7.9% 1.9% 3.6% 1.1%
+CVS 4.2% [ii] [ii] [ii]
+Perforce 3.3% [ii] [ii] [ii]
+VSS [ii] 0.6% [ii] [ii]
+ClearCase [ii] 0.4% [ii] [ii]
+Zip file backups [ii] 2.0% 7.9% [ii]
+Raw network sharing [ii] 1.7% 7.9% [ii]
+Other 5.8% 3.0% [ii] [ii]
+None 9.3% 4.8% 4.8% 4.3%
 The UK IT jobs website itjobswatch.co.uk reports that as of late September 2016, 29.27% of UK permanent software development job openings have cited Git,[101] ahead of 12.17% for Microsoft Team Foundation Server,[102] 10.60% for Subversion,[103] 1.30% for Mercurial,[104] and 0.48% for Visual SourceSafe.[105]
 
 Extensions[edit]
@@ -177,7 +178,7 @@ Git does not impose many restrictions on how it should be used, but some convent
 
 The master branch is created by default with git init [107] and is often used as the branch that other changes are merged into.[108] Correspondingly, the default name of the upstream remote is origin and so the name of the default remote branch is origin/master. The use of master as the default branch name is not universally true. Repositories created in GitHub and GitLab will initialize with a main branch instead of master. [109] [110]
 Pushed commits should usually not be overwritten, but should rather be reverted[111] (a commit is made on top which reverses the changes to an earlier commit). This prevents shared new commits based on shared commits from being invalid because the commit on which they are based does not exist in the remote. If the commits contain sensitive information, they should be removed, which involves a more complex procedure to rewrite history.
-The git-flow[112] workflow and naming conventions are often adopted to distinguish feature specific unstable histories (feature/*), unstable shared histories (develop), production ready histories (main), and emergency patches to released products (hotfix).
+The git-flow[112] workflow and naming conventions are often adopted to distinguish feature specific unstable histories (feature/\*), unstable shared histories (develop), production ready histories (main), and emergency patches to released products (hotfix).
 Pull requests are not a feature of git, but are commonly provided by git cloud services. A pull request is a request by one user to merge a branch of their repository fork into another repository sharing the same history (called the upstream remote).[113] The underlying function of a pull request is no different than that of an administrator of a repository pulling changes from another remote (the repository that is the source of the pull request). However, the pull request itself is a ticket managed by the hosting server which initiates scripts to perform these actions; it is not a feature of git SCM.
 Security[edit]
 Git does not provide access-control mechanisms, but was designed for operation with other tools that specialize in access control.[114]
@@ -195,7 +196,8 @@ Notes[edit]
 ^ GPL-2.0-only since 2005-04-11. Some parts under compatible licenses such as LGPLv2.1.[6]
 ^ Jump up to: a b c d e f g h i j k l m n o p q r s Not listed as an option in this survey
 
-References[edit]
+#### References[edit]
+
 ^ "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
 ^ "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
 ^ "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
@@ -316,6 +318,7 @@ References[edit]
 ^ "Git 2.6.1". GitHub. 29 September 2015. Archived from the original on 11 April 2016. Retrieved 26 December 2015.
 ^ Jump up to: a b c Blake Burkhart; et al. (5 October 2015). "Re: CVE Request: git". Archived from the original on 27 December 2015. Retrieved 26 December 2015.
 ^ "hash – How safe are signed git tags? Only as safe as SHA-1 or somehow safer?". Information Security Stack Exchange. 22 September 2014. Archived from the original on 24 June 2016.
+
 - [^121] "Why does Git use a cryptographic hash function?". Stack Overflow. 1 March 2015. Archived from the original on 1 July 2016.
 - [^122]: "Git – hash-function-transition Documentation". git-scm.com.
 
