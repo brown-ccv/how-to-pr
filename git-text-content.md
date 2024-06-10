@@ -172,7 +172,8 @@ git-flow, a set of Git extensions to provide high-level repository operations fo
 git-machete, a repository organizer & tool for automating rebase/merge/pull/push operations
 Microsoft developed the Virtual File System for Git (VFS for Git; formerly Git Virtual File System or GVFS) extension to handle the size of the Windows source-code tree as part of their 2017 migration from Perforce. VFS for Git allows cloned repositories to use placeholders whose contents are downloaded only once a file is accessed.[106]
 
-Conventions[edit]
+## Conventions
+
 Git does not impose many restrictions on how it should be used, but some conventions are adopted in order to organize histories, especially those which require the cooperation of many contributors.
 
 The master branch is created by default with git init [107] and is often used as the branch that other changes are merged into.[108] Correspondingly, the default name of the upstream remote is origin and so the name of the default remote branch is origin/master. The use of master as the default branch name is not universally true. Repositories created in GitHub and GitLab will initialize with a main branch instead of master. [109] [110]
