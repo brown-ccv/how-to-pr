@@ -34,24 +34,27 @@ The source code for Git refers to the program as, "the information manager from 
 Design
 Git's design was inspired by BitKeeper and Monotone.[38][39] Git was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as Cogito or StGIT.[39] The core Git project has since become a complete version-control system that is usable directly.[40] While strongly influenced by BitKeeper, Torvalds deliberately avoided conventional approaches, leading to a unique design.[41]
 
-## Characteristics
+### Characteristics
 
 Git's design is a synthesis of Torvalds's experience with Linux in maintaining a large distributed development project, along with his intimate knowledge of file-system performance gained from the same project and the urgent need to produce a working system in short order. These influences led to the following implementation choices:[42]
 
-Strong support for non-linear development
+#### Strong support for non-linear development
 Git supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history. In Git, a core assumption is that a change will be merged more often than it is written, as it is passed around to various reviewers. In Git, branches are very lightweight: a branch is only a reference to one commit. With its parental commits, the full branch structure can be constructed.[improper synthesis?]
-Distributed development
+#### Distributed development
 Like Darcs, BitKeeper, Mercurial, Bazaar, and Monotone, Git gives each developer a local copy of the full development history, and changes are copied from one such repository to another. These changes are imported as added development branches and can be merged in the same way as a locally developed branch.[43]
 #### Compatibility with existing systems and protocols
-
 Repositories can be published via Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), or a Git protocol over either a plain socket or Secure Shell (ssh). Git also has a CVS server emulation, which enables the use of existing CVS clients and IDE plugins to access Git repositories. Subversion repositories can be used directly with git-svn.[44]
 Efficient handling of large projects
 Torvalds has described Git as being very fast and scalable,[45] and performance tests done by Mozilla[46] showed that it was an order of magnitude faster diffing large repositories than Mercurial and GNU Bazaar; fetching version history from a locally stored repository can be one hundred times faster than fetching it from the remote server.[47]
-Cryptographic authentication of history
+
+#### Cryptographic authentication of history
+
 The Git history is stored in such a way that the ID of a particular version (a commit in Git terms) depends upon the complete development history leading up to that commit. Once it is published, it is not possible to change the old versions without it being noticed. The structure is similar to a Merkle tree, but with added data at the nodes and leaves.[48] (Mercurial and Monotone also have this property.)
-Toolkit-based design
+#### Toolkit-based design
 Git was designed as a set of programs written in C and several shell scripts that provide wrappers around those programs.[49] Although most of those scripts have since been rewritten in C for speed and portability, the design remains, and it is easy to chain the components together.[50]
-Pluggable merge strategies
+
+### Pluggable merge strategies
+
 As part of its toolkit design, Git has a well-defined model of an incomplete merge, and it has multiple algorithms for completing it, culminating in telling the user that it is unable to complete the merge automatically and that manual editing is needed.[51]
 Garbage accumulates until collected
 Aborting operations or backing out changes will leave useless dangling objects in the database. These are generally a small fraction of the continuously growing history of wanted objects. Git will automatically perform garbage collection when enough loose objects have been created in the repository. Garbage collection can be called explicitly using git gc.[52]
