@@ -1,5 +1,5 @@
 # Coding and Collaboration using Git, GitHub and Pull Requests
-Demonstration repository for the CCV Intern Lunch-and-Learn 2024: Coding + Collaboration using Git, GitHub and Pull Requests
+Demonstration repository for the CCV Bootcamp 2024 session on Coding + Collaboration using Git, GitHub and Pull Requests
 
 ## 🎯 Aim for the Workshop
 
