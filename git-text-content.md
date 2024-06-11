@@ -201,7 +201,7 @@ Notes[edit]
 ^ Jump up to: a b c d e f g h i j k l m n o p q r s Not listed as an option in this survey
 
 References[edit]
-^ "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
+- "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
 ^ "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
 ^ "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
 ^ "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
