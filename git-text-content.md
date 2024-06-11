@@ -74,7 +74,8 @@ When there are more than one common ancestors that can be used for a three-way m
 
 — Linus Torvalds[61]
 octopus: This is the default when merging more than two heads.
-Data structures[edit]
+## Data structures
+
 Git's primitives are not inherently a source-code management system. Torvalds explains:[62]
 
 In many ways you can just see git as a filesystem—it's content-addressable, and it has a notion of versioning, but I really designed it coming at the problem from the viewpoint of a filesystem person (hey, kernels is what I do), and I actually have absolutely zero interest in creating a traditional SCM system.
@@ -110,7 +111,8 @@ remotes: refers to an object which exists in a remote repository,
 stash: refers to an object not yet committed,
 meta: e.g. a configuration in a bare repository, user rights; the refs/meta/config namespace was introduced retrospectively, gets used by Gerrit,[66]
 tags: see above.
-Implementations[edit]
+
+## Implementations
 
 gitg is a graphical front-end using GTK+.
 Git (the main implementation in C) is primarily developed on Linux, although it also supports most major operating systems, including the BSDs (DragonFly BSD, FreeBSD, NetBSD, and OpenBSD), Solaris, macOS, and Windows.[67][68]
@@ -127,12 +129,13 @@ The libgit2 implementation of Git is an ANSI C software library with no other de
 
 JS-Git is a JavaScript implementation of a subset of Git.[80]
 
-Git server[edit]
+## Git server
 
 Screenshot of Gitweb interface showing a commit diff
 As Git is a distributed version-control system, it could be used as a server out of the box. It's shipped with a built-in command git daemon which starts a simple TCP server running on the GIT protocol.[81] Dedicated Git HTTP servers help (amongst other features) by adding access control, displaying the contents of a Git repository via the web interfaces, and managing multiple repositories. Already existing Git repositories can be cloned and shared to be used by others as a centralized repo. It can also be accessed via remote shell just by having the Git software installed and allowing a user to log in.[82] Git servers typically listen on TCP port 9418.[83]
 
-Open source[edit]
+### Open source
+
 Hosting the Git server using the Git Binary.[84]
 Gerrit, a Git server configurable to support code reviews and providing access via ssh, an integrated Apache MINA or OpenSSH, or an integrated Jetty web server. Gerrit provides integration for LDAP, Active Directory, OpenID, OAuth, Kerberos/GSSAPI, X509 https client certificates. With Gerrit 3.0 all configurations will be stored as Git repositories, no database is required to run. Gerrit has a pull-request feature implemented in its core but lacks a GUI for it.
 Phabricator, a spin-off from Facebook. As Facebook primarily uses Mercurial, the Git support is not as prominent.[85]
@@ -144,7 +147,8 @@ Git server as a service[edit]
 See also: Comparison of source-code-hosting facilities
 There are many offerings of Git repositories as a service. The most popular are GitHub, SourceForge, Bitbucket and GitLab.[88][89][90][91][92]
 
-Adoption[edit]
+## Adoption
+
 The Eclipse Foundation reported in its annual community survey that as of May 2014, Git is now the most widely used source-code management tool, with 42.9% of professional software developers reporting that they use Git as their primary source-control system[93] compared with 36.3% in 2013, 32% in 2012; or for Git responses excluding use of GitHub: 33.3% in 2014, 30.3% in 2013, 27.6% in 2012 and 12.8% in 2011.[94] Open-source directory Black Duck Open Hub reports a similar uptake among open-source projects.[95]
 
 Stack Overflow has included version control in their annual developer survey[96] in 2015 (16,694 responses),[97] 2017 (30,730 responses),[98] 2018 (74,298 responses)[99] and 2022 (71,379 reponses).[100] Git was the overwhelming favorite of responding developers in these surveys, reporting as high as 93.9% in 2022.
@@ -184,7 +188,8 @@ The master branch is created by default with git init [107] and is often used as
 Pushed commits should usually not be overwritten, but should rather be reverted[111] (a commit is made on top which reverses the changes to an earlier commit). This prevents shared new commits based on shared commits from being invalid because the commit on which they are based does not exist in the remote. If the commits contain sensitive information, they should be removed, which involves a more complex procedure to rewrite history.
 The git-flow[112] workflow and naming conventions are often adopted to distinguish feature specific unstable histories (feature/*), unstable shared histories (develop), production ready histories (main), and emergency patches to released products (hotfix).
 Pull requests are not a feature of git, but are commonly provided by git cloud services. A pull request is a request by one user to merge a branch of their repository fork into another repository sharing the same history (called the upstream remote).[113] The underlying function of a pull request is no different than that of an administrator of a repository pulling changes from another remote (the repository that is the source of the pull request). However, the pull request itself is a ticket managed by the hosting server which initiates scripts to perform these actions; it is not a feature of git SCM.
-Security[edit]
+## Security
+
 Git does not provide access-control mechanisms, but was designed for operation with other tools that specialize in access control.[114]
 
 On 17 December 2014, an exploit was found affecting the Windows and macOS versions of the Git client. An attacker could perform arbitrary code execution on a target computer with Git installed by creating a malicious Git tree (directory) named .git (a directory in Git repositories that stores all the data of the repository) in a different case (such as .GIT or .Git, needed because Git does not allow the all-lowercase version of .git to be created manually) with malicious files in the .git/hooks subdirectory (a folder with executable files that Git runs) on a repository that the attacker made or on a repository that the attacker can modify. If a Windows or Mac user pulls (downloads) a version of the repository with the malicious directory, then switches to that directory, the .git directory will be overwritten (due to the case-insensitive trait of the Windows and Mac filesystems) and the malicious executable files in .git/hooks may be run, which results in the attacker's commands being executed. An attacker could also modify the .git/config configuration file, which allows the attacker to create malicious Git aliases (aliases for Git commands or external commands) or modify extant aliases to execute malicious commands when run. The vulnerability was patched in version 2.2.1 of Git, released on 17 December 2014, and announced the next day.[115][116]
@@ -201,7 +206,7 @@ Notes[edit]
 ^ Jump up to: a b c d e f g h i j k l m n o p q r s Not listed as an option in this survey
 
 References[edit]
-^ "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
+- "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
 ^ "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
 ^ "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
 ^ "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
