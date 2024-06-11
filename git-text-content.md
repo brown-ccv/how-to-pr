@@ -110,7 +110,8 @@ remotes: refers to an object which exists in a remote repository,
 stash: refers to an object not yet committed,
 meta: e.g. a configuration in a bare repository, user rights; the refs/meta/config namespace was introduced retrospectively, gets used by Gerrit,[66]
 tags: see above.
-Implementations[edit]
+
+## Implementations
 
 gitg is a graphical front-end using GTK+.
 Git (the main implementation in C) is primarily developed on Linux, although it also supports most major operating systems, including the BSDs (DragonFly BSD, FreeBSD, NetBSD, and OpenBSD), Solaris, macOS, and Windows.[67][68]
@@ -127,12 +128,13 @@ The libgit2 implementation of Git is an ANSI C software library with no other de
 
 JS-Git is a JavaScript implementation of a subset of Git.[80]
 
-Git server[edit]
+## Git server
 
 Screenshot of Gitweb interface showing a commit diff
 As Git is a distributed version-control system, it could be used as a server out of the box. It's shipped with a built-in command git daemon which starts a simple TCP server running on the GIT protocol.[81] Dedicated Git HTTP servers help (amongst other features) by adding access control, displaying the contents of a Git repository via the web interfaces, and managing multiple repositories. Already existing Git repositories can be cloned and shared to be used by others as a centralized repo. It can also be accessed via remote shell just by having the Git software installed and allowing a user to log in.[82] Git servers typically listen on TCP port 9418.[83]
 
-Open source[edit]
+### Open source
+
 Hosting the Git server using the Git Binary.[84]
 Gerrit, a Git server configurable to support code reviews and providing access via ssh, an integrated Apache MINA or OpenSSH, or an integrated Jetty web server. Gerrit provides integration for LDAP, Active Directory, OpenID, OAuth, Kerberos/GSSAPI, X509 https client certificates. With Gerrit 3.0 all configurations will be stored as Git repositories, no database is required to run. Gerrit has a pull-request feature implemented in its core but lacks a GUI for it.
 Phabricator, a spin-off from Facebook. As Facebook primarily uses Mercurial, the Git support is not as prominent.[85]
@@ -202,7 +204,7 @@ Notes[edit]
 ^ Jump up to: a b c d e f g h i j k l m n o p q r s Not listed as an option in this survey
 
 References[edit]
-^ "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
+- "Initial revision of "git", the information manager from hell". GitHub. 8 April 2005. Archived from the original on 16 November 2015. Retrieved 20 December 2015.
 ^ "Commit Graph". GitHub. 8 June 2016. Archived from the original on 20 January 2016. Retrieved 19 December 2015.
 ^ "[ANNOUNCE] Git v2.38.0". 3 October 2022. Retrieved 4 October 2022.
 ^ "Git website". Archived from the original on 9 June 2022. Retrieved 9 June 2022.
