@@ -74,7 +74,8 @@ When there are more than one common ancestors that can be used for a three-way m
 
 — Linus Torvalds[61]
 octopus: This is the default when merging more than two heads.
-Data structures[edit]
+## Data structures
+
 Git's primitives are not inherently a source-code management system. Torvalds explains:[62]
 
 In many ways you can just see git as a filesystem—it's content-addressable, and it has a notion of versioning, but I really designed it coming at the problem from the viewpoint of a filesystem person (hey, kernels is what I do), and I actually have absolutely zero interest in creating a traditional SCM system.
