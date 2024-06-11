@@ -146,7 +146,8 @@ Git server as a service[edit]
 See also: Comparison of source-code-hosting facilities
 There are many offerings of Git repositories as a service. The most popular are GitHub, SourceForge, Bitbucket and GitLab.[88][89][90][91][92]
 
-Adoption[edit]
+## Adoption
+
 The Eclipse Foundation reported in its annual community survey that as of May 2014, Git is now the most widely used source-code management tool, with 42.9% of professional software developers reporting that they use Git as their primary source-control system[93] compared with 36.3% in 2013, 32% in 2012; or for Git responses excluding use of GitHub: 33.3% in 2014, 30.3% in 2013, 27.6% in 2012 and 12.8% in 2011.[94] Open-source directory Black Duck Open Hub reports a similar uptake among open-source projects.[95]
 
 Stack Overflow has included version control in their annual developer survey[96] in 2015 (16,694 responses),[97] 2017 (30,730 responses),[98] 2018 (74,298 responses)[99] and 2022 (71,379 reponses).[100] Git was the overwhelming favorite of responding developers in these surveys, reporting as high as 93.9% in 2022.
