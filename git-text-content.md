@@ -110,7 +110,8 @@ remotes: refers to an object which exists in a remote repository,
 stash: refers to an object not yet committed,
 meta: e.g. a configuration in a bare repository, user rights; the refs/meta/config namespace was introduced retrospectively, gets used by Gerrit,[66]
 tags: see above.
-Implementations[edit]
+
+## Implementations
 
 gitg is a graphical front-end using GTK+.
 Git (the main implementation in C) is primarily developed on Linux, although it also supports most major operating systems, including the BSDs (DragonFly BSD, FreeBSD, NetBSD, and OpenBSD), Solaris, macOS, and Windows.[67][68]
